@@ -1,30 +1,30 @@
 {
   "active": true,
-  "hostname": "ontyonty-9",
+  "hostname": "ontyonty-10",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "disk_free_gb": 79.8,
-    "ram_gb": 16.0,
-    "cpu_threads": 4
+    "cpu_threads": 4,
+    "disk_free_gb": 77.1,
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "xyonty",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-01T11:32:46Z",
-  "expires_at": "2026-11-01T17:14:46Z",
+  "started_at": "2026-11-01T17:18:10Z",
+  "expires_at": "2026-11-01T23:00:10Z",
   "duration_menit": 342,
-  "run_id": "41302278083",
+  "run_id": "41330699592",
   "run_attempt": "1",
-  "run_number": "9",
-  "run_url": "https://github.com/himaruyamada-svg/bebas-/actions/runs/41302278083",
+  "run_number": "10",
+  "run_url": "https://github.com/himaruyamada-svg/bebas-/actions/runs/41330699592",
   "mode": "bersih+win10",
   "persist": {
+    "source": "xyrdp-state.7z.enc",
     "restored": true,
     "profile": "C:\\Users\\xyonty",
-    "source": "xyrdp-state.7z.enc",
     "files": 121
   },
   "storage": {
@@ -44,9 +44,9 @@
     ],
     "skipped": [],
     "applied_count": 7,
-    "elapsed_sec": 1.4,
+    "elapsed_sec": 1.2,
     "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-01T11:32:56.6201147Z"
+    "updated_at": "2026-11-01T17:18:18.2784363Z"
   },
   "win10": {
     "look": "ok",
@@ -63,42 +63,31 @@
     "microphone": "rdp_capture_enabled"
   },
   "grafis": {
-    "mesa": "26.2.5",
-    "mode": "software",
+    "adapters": "Microsoft Hyper-V Video",
+    "path": "C:\\XyRDP\\grafis\\mesa-x64",
     "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
     "vulkan": "lavapipe 1.3 (CPU)",
-    "path": "C:\\XyRDP\\grafis\\mesa-x64",
-    "adapters": "Microsoft Hyper-V Video"
+    "mesa": "26.2.5",
+    "mode": "software"
   },
   "samp": {
+    "playable": true,
     "directplay": true,
-    "vc2015_x86": true,
-    "samp_client": true,
-    "vc2013_x64": true,
-    "vc2015_x64": true,
     "webview2": true,
-    "dep_optin": true,
-    "dgvoodoo_d3d9": true,
-    "fullscreen": true,
-    "game_present": true,
+    "status": "runtimes-2026-ready",
+    "vc2015_x86": true,
+    "vc2015_x64": true,
+    "vc2013_x86": true,
+    "samp_client": true,
     "directx9": true,
     "silentpatch": false,
-    "vc2013_x86": true,
-    "playable": true,
-    "status": "runtimes-2026-ready"
+    "game_present": true,
+    "fullscreen": true,
+    "dep_optin": true,
+    "vc2013_x64": true,
+    "dgvoodoo_d3d9": true
   },
   "games": {
-    "minecraft_java": {
-      "status": "ready",
-      "official_exe": true,
-      "opengl46": true,
-      "tlauncher_jar": true,
-      "prismlauncher": true
-    },
-    "memu": {
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
-      "status": "ready"
-    },
     "blender": {
       "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
       "status": "ready"
@@ -108,8 +97,19 @@
       "status": "ready"
     },
     "fivem": {
-      "sound": true,
-      "status": true
+      "status": true,
+      "sound": true
+    },
+    "minecraft_java": {
+      "tlauncher_jar": true,
+      "status": "ready",
+      "opengl46": true,
+      "prismlauncher": true,
+      "official_exe": true
+    },
+    "memu": {
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
+      "status": "ready"
     },
     "roblox": {
       "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
@@ -125,9 +125,9 @@
     "admin": true
   },
   "tools_hub": {
+    "installed": true,
     "auto_start": true,
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
-    "installed": true
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
   },
   "xydesk": {
     "host": "ok",
@@ -149,19 +149,19 @@
   "akses": {
     "mode": "tailscale",
     "tunnel": {
-      "host": "100.111.180.0",
-      "selftest": "ok",
       "outside": "tailscale",
-      "address": "100.111.180.0:3389",
+      "port": 3389,
+      "selftest": "ok",
+      "host": "100.65.38.87",
       "status": "ok",
-      "port": 3389
+      "address": "100.65.38.87:3389"
     },
     "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "hostname": "Ontyonty",
+      "ip": "100.65.38.87",
       "magicdns": "ontyonty.tail184f25.ts.net.",
-      "status": "ok",
-      "ip": "100.111.180.0",
-      "hostname": "Ontyonty"
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "status": "ok"
     }
   }
 }
